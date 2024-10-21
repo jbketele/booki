@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -26,39 +27,54 @@
         </div>
 
     </section>
-    <section class="étapes">
+    <section class="etapes marge">
         <h2>Fonctionnement</h2>
-        <button>Choissez votre restaurant</button>
-        <button>Composez votre menu</button>
-        <button>Dégustez au restaurant</button>
+        <div class="etapes__button">
+            <button><i class="bi bi-phone"></i>Choissez votre restaurant</button>
+            <button><i class="bi bi-list-ul"></i>Composez votre menu</button>
+            <button><i class="bi bi-shop-window"></i>Dégustez au restaurant</button>
+        </div>
+
     </section>
-    <section class="restaurants">
+    <section class="restaurants marge">
+        <h2>Restaurants</h2>
         <div class="restaurants__cards">
             <div class="card">
-                <img src="" alt="">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
+                <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                <div class="card__text">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                </div>
+
             </div>
             <div class="card">
-                <img src="" alt="">
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
+                <img id="note" src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                <div class="card__text">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                </div>
+
             </div>
             <div class="card">
-                <img src="" alt="">
-                <h3>À la française</h3>
-                <p>Cité Rouge</p>
+                <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                <div class="card__text">
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
+                </div>
+
             </div>
             <div class="card">
-                <img src="" alt="">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
+                <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                <div class="card__text">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="logo__footer">
-            <img src="assets/images/logo/ohmyfood.png" alt="">
+            <img src="assets/images/logo/ohmyfood@2x.svg" alt="">
         </div>
         <div class="text__footer">
             <p>Proposer un restaurant</p>
