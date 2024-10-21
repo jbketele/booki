@@ -62,8 +62,13 @@ li:hover {
     border-top: #0065FC solid;
 }
 
+.input-group {
+    display: flex;
+}
+
 input::placeholder {
     font-weight: bold;
+    padding-left: 10px;
 }
 
 .card {
@@ -77,14 +82,24 @@ input::placeholder {
     border-radius: 10px 0 0 10px;
     border: 0px;
     margin-right: -1px;
+    width: 40px;
+    height: 30px;
+    background-color: #F2F2F2;
+}
+
+.place i {
+    color: black;
 }
 
 .form-control {
     border-radius: 0%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 30px;
 }
 
 .search-button {
+    background-color: #0065FC;
+    color: white;
     border-radius: 0 10px 10px 0;
     border: 0px;
     height: auto;
@@ -110,31 +125,45 @@ input::placeholder {
 
 .filtre {
     border-radius: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
     margin-inline: 10px;
     display: flex;
 }
 
 .filtre i {
     color: #0065FC;
+    width: 20px;
+}
+
+.filtre p {
+    font-weight: bold;
 }
 
 .filtres-button {
     display: flex;
 }
 
+.info {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info i {
+    margin-right: 10px;
+}
+
+.info p {
+    margin: 0%;
+}
+
 .categories {
     margin: 0%;
     margin-left: 5px;
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-    font-weight: bold;
 }
 
 .euro {
@@ -158,20 +187,28 @@ input::placeholder {
     box-sizing: border-box;
 }
 
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0%;
+}
+
+.card-subtitle {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
     background-color: var(--main-bg-color);
 }
 
-.info {
-    display: flex;
-}
-
-.info i {
-    margin-right: 10px;
-    color: #0065FC;
-}
 
 .hebergements-cards {
     display: flex;
@@ -207,12 +244,12 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     margin-top: 33px;
-    height: 150px;
+    height: 130px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
+    height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
