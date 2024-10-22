@@ -64,10 +64,11 @@ li:hover {
     border-top: #0065FC solid;
 }
 
-.input-group {
+.search-group {
     display: flex;
     margin-bottom: 20px;
     height: 45px;
+    width: 300px;
 }
 
 input::placeholder {
@@ -421,20 +422,29 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    body {
+        background-color: #F2F2F2;
+        margin: 0;
+    }
+
     .main-container {
         padding: 0%;
     }
 
     .header {
         display: block;
+        background-color: white;
+        margin: 0;
     }
 
     .logo-container .logo {
-        width: 100px;
+        width: 70px;
+        padding: 10px;
     }
 
     .logo-container {
         text-align: center;
+        padding-top: 20px;
     }
 
     ul {
@@ -446,6 +456,7 @@ footer {
     li {
         width: 50%;
         margin: 0%;
+        padding-bottom: 10px;
     }
 
     li:hover {
@@ -455,24 +466,53 @@ footer {
     }
 
     .search-title {
-        margin: 20px;
+        padding: 35px 20px;
+        background-color: white;
     }
 
     .search-title p {
         margin-top: 10px;
     }
 
-    .input-group {
-        margin-left: 20px;
+    .search-group {
+        background-color: white;
+        margin: 0;
+        padding-left: 20px;
+        padding-bottom: 30px;
         width: auto;
+        height: 50px;
+    }
+
+    .place {
+        width: 60px;
+        height: 100%;
+        padding: 0;
+    }
+
+    .form-control {
+        width: 260px;
+        height: 100%;
+        padding: 0;
+    }
+
+    input::placeholder {
+        font-size: 18px;
     }
 
     .search-button {
-        content: '\F52A';
+        width: 50px;
+        height: 100%;
+        border-radius: 17px;
+        margin-left: -30px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     }
 
     .search-icon {
         display: inline;
+    }
+
+    .search-icon i {
+        color: white;
     }
 
     .search-text {
@@ -480,26 +520,51 @@ footer {
     }
 
     .filtres {
-        margin-left: 20px;
+        background-color: white;
+        padding-left: 20px;
         display: block;
+        margin: 0;
     }
 
     .filtres h2 {
         margin-bottom: 20px;
+        font-size: 18px;
     }
 
     .filtres-button {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 0;
     }
 
     .filtre {
         margin-bottom: 20px;
+        margin-left: 0;
         width: 150px;
     }
 
+    .categories {
+        font-size: 14px;
+    }
+
     .info {
-        margin: 20px;
+        background-color: white;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+
+    .info i {
+        height: 18px;
+    }
+
+    .info p {
+        padding: 0;
+    }
+
+    .card {
+        filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
     }
 
     .hebergements {
@@ -508,8 +573,7 @@ footer {
 
     .populaires {
         order: 1;
-        margin-bottom: 20px;
-        margin-top: 0%;
+        margin: 0%;
     }
 
     .populaires-cards {
@@ -517,7 +581,12 @@ footer {
     }
 
     .populaires-cards a {
-        width: 340px;
+        width: 330px;
+    }
+
+    .populaires-cards .card {
+        margin-top: 15px;
+        height: 135px;
     }
 
     .hebergements-and-populaires section {
@@ -535,28 +604,62 @@ footer {
     }
 
     .hebergements-cards .card {
-        width: 340px;
+        width: 320px;
+        margin-top: 15px;
+    }
+
+    .hebergements-cards .card-content {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+    .hebergements h2 {
+        font-size: 18px;
+    }
+
+    .hebergements-and-populaires {
+        margin-bottom: 0;
     }
 
     .activites {
-        margin-left: 20px;
+        padding-left: 30px;
+        padding-top: 65px;
+        padding-bottom: 50px;
+        margin: 0;
+        background-color: white;
     }
 
     .activites-cards {
+        margin-top: 30px;
         flex-direction: column;
     }
 
     .activites-cards .card {
-        width: 340px;
+        width: 320px;
         height: 200px;
         margin-bottom: 15px;
+        margin-top: 2px;
     }
 
     footer {
         flex-direction: column;
+        margin: 0;
     }
 
     .footer-col {
         margin-left: 20px;
+    }
+
+    #middle {
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+
+    .footer-col h2 {
+        font-size: 18px;
+    }
+
+    .footer-col p {
+        font-size: 16px;
     }
 }
