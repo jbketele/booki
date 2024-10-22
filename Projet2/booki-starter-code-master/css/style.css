@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 .main-container {
@@ -39,6 +40,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .logo-container .logo {
@@ -332,17 +334,27 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .logo {
-        width: 50%;
+    .logo-container .logo {
+        width: 60px;
+    }
+
+    .filtres {
+        display: block;
     }
 
     .filtres-button {
         display: flex;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     .hebergements-and-populaires {
         flex-direction: column;
         width: 100%;
+    }
+
+    .info {
+        margin-bottom: 30px;
     }
 
     .hebergements {
@@ -391,8 +403,12 @@ footer {
         margin-left: 20px;
     }
 
+    footer {
+        padding-left: 10px;
+    }
+
     .footer-col {
-        margin-right: 50px;
+        margin-right: 135px;
         font-size: 13px;
         width: max-content;
     }
