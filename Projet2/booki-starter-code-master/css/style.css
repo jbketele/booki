@@ -641,6 +641,11 @@ footer {
         margin-top: 2px;
     }
 
+    .activites img {
+        height: 70%;
+        margin-bottom: 15px;
+    }
+
     footer {
         flex-direction: column;
         margin: 0;
