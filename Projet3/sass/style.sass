@@ -1,3 +1,6 @@
+*
+    font-family: "Roboto", sans-serif
+
 @media (max-width:768px)
     body
         margin: 0
@@ -8,34 +11,57 @@
         justify-content: center
 
     .shadow
-        box-shadow: 0px 2px 2px #a9a9a9
+        box-shadow: 0px 4px 10px #a9a9a9
+
+    .shadow-top
+        box-shadow: 0px 4px 10px #a9a9a9
 
     .logo
-        padding: 10px
+        padding-top: 20px
+        padding-bottom: 13px
         background-color: white
 
     .logo img
-        width: 200px
+        width: 175px
 
     header
+        display: flex
         background-color: #eaeaea
         width: 100%
-        margin-top: 3px
+        margin-top: 0px
+
+    header i
+        padding-top: 20px
+        padding-right: 20px
+
+    header p 
+        margin-top: 13px
+        margin-bottom: 14px
 
     h2
         margin: 0
-        padding-top: 30px
+        padding-top: 40px
         padding-bottom: 10px
 
     .intro
-        padding-bottom: 30px
+        padding-bottom: 57px
+
+    .intro p
+        margin-top: 0
+        margin-bottom: 35px
+        font-weight: 300
+        color: #353535
+        font-size: 18px
 
     .intro button
         background-color: #9747ff
         color: white
-        padding: 10px
         border: 0
         border-radius: 30px
+        height: 50px
+        font-size: 16px
+        padding-left: 20px
+        padding-right: 20px
 
     .marge
         padding-left: 10px
@@ -45,12 +71,59 @@
         background-color: white
         padding-bottom: 30px
 
+    .etapes h2
+        padding-top: 50px
+        padding-bottom: 25px
+        padding-left: 10px
+
     .etapes__button
         display: flex
         flex-direction: column
+        list-style: none
+        counter-reset: section // rénitialise le compteur
+        padding-left: 10px
+        margin-top: 0
 
-    .etapes__button button
-        margin: 5px
+    .etapes__button li
+        counter-increment: section // Incrémentation du compteur
+        display: flex
+        align-items: baseline
+
+    .etapes__button li::before
+        content: counter(section) // ajouter un compteur personnalisé
+        border-radius: 50%
+        background-color: #9747ff
+        width: 25px
+        height: 25px
+        color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        position: sticky
+        margin-right: -15px
+
+    .etape
+        height: 70px
+        border-radius: 20px
+        border: 0
+        font-size: 16px
+        display: flex
+        justify-content: start
+        align-items: center
+        background-color: #f6f6f6
+        box-shadow: 0px 5px 10px #e0e0e0
+        margin-bottom: 27px
+        margin-left: 0
+        width: 330px
+
+    .etape i
+        padding-inline: 25px
+
+    .fa-mobile-screen-button, .fa-list-ul
+        color: grey
+
+    .fa-store
+        color: #9747ff
 
     .card
         margin-top: 10px
