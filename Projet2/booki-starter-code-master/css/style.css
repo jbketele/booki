@@ -135,6 +135,8 @@ input::placeholder {
     border: 2px solid rgba(0, 0, 0, 0.1);
     margin-inline: 10px;
     display: flex;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .filtre:hover {
@@ -145,11 +147,11 @@ input::placeholder {
     color: #0065FC;
     width: 30px;
     padding-top: 8px;
+    padding-right: 5px;
 }
 
 .categories {
     margin: 0%;
-    margin-left: 5px;
     font-weight: bold;
     font-size: 16px;
 }
