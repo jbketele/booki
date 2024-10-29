@@ -457,6 +457,10 @@ footer {
         padding-top: 20px;
     }
 
+    main {
+        width: 100%;
+    }
+
     ul {
         width: 100%;
         text-align: center;
@@ -487,10 +491,10 @@ footer {
     .search-group {
         background-color: white;
         margin: 0;
-        padding-left: 20px;
+        padding-inline: 20px;
         padding-bottom: 30px;
-        width: auto;
         height: 50px;
+        width: auto;
     }
 
     .place {
@@ -659,7 +663,6 @@ footer {
     footer {
         flex-direction: column;
         margin: 0;
-        width: 100%;
     }
 
     .footer-col {
